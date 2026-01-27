@@ -10,7 +10,6 @@ steps:
         echo "Repository Name: $REPO_NAME"
         echo "Branch Name: $BRANCH_NAME"
         echo "Commit SHA: $COMMIT_SHA"
-        echo "Trigger ID: $TRIGGER_ID"
 
 options: 
   logging: CLOUD_LOGGING_ONLY
