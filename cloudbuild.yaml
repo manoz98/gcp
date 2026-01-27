@@ -1,0 +1,16 @@
+steps:
+  - name: alpine
+    entrypoint: /bin/sh
+    args:
+      - '-c'
+      - |
+        echo "Welcome to Cloud build trigger"
+        echo "Build ID: $BUILD_ID"
+        echo "Project ID: $PROJECT_ID"
+        echo "Repository Name: $REPO_NAME"
+        echo "Branch Name: $BRANCH_NAME"
+        echo "Commit SHA: $COMMIT_SHA"
+        echo "Trigger ID: $TRIGGER_ID"
+
+options: 
+  logging: CLOUD_LOGGING_ONLY
