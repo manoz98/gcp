@@ -9,6 +9,7 @@ steps:
     args:
       - 'push'
       - 'us-central1-docker.pkg.dev/learning-485615/gcp-devops/app-image:v1'
-  image: 'us-central1-docker.pkg.dev/learning-485615/gcp-devops/app-image:v1'
+images: 
+  - 'us-central1-docker.pkg.dev/learning-485615/gcp-devops/app-image:v1'
 options:
   logging: CLOUD_LOGGING_ONLY
