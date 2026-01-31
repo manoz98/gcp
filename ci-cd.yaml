@@ -1,0 +1,14 @@
+steps:
+  - name: 'gcr.io/cloud-builders/docker'
+    args:
+      - 'build'
+      - '-t'
+      - 'us-central1-docker.pkg.dev/learning-485615/gcp-devops/app-image:v1'
+      - '.'
+  - name: 'gcr.io/cloud-builders/docker'
+    args:
+      - 'push'
+      - 'us-central1-docker.pkg.dev/learning-485615/gcp-devops/app-image:v1'
+  image: 'us-central1-docker.pkg.dev/learning-485615/gcp-devops/app-image:v1'
+options:
+  logging: CLOUD_LOGGING_ONLY
